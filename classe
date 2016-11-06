@@ -1,32 +1,21 @@
-
-
-
-
 #include <iostream>
 #include <string>
-
 #include </usr/local/lib/include/boost/filesystem.hpp>
- 
 using namespace std;
 using boost:filesystem.hpp ;
 
-int main()
-{
-class_1 
-{ 
-    string name ;
-    int  value_1;
-    float value_2 ;
-} ;
-
-class_2
-{
-   
-   string name ;
-   class_1 my_obj ;
-
-
+class n1 {
+  string name;
+  int value_1;
+  float value_2;
 };
 
+class n2 {
+  string name;
+};
+
+int main(){
+ n1 myobj;
  return 0;
  }
+ 
