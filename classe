@@ -1,21 +1,61 @@
 #include <iostream>
-#include <string>
 #include </usr/local/lib/include/boost/filesystem.hpp>
 using namespace std;
 using boost:filesystem.hpp ;
 
-class n1 {
-  string name;
-  int value_1;
-  float value_2;
+
+#include <iostream>
+using namespace std;
+
+class person
+{
+public:
+    
+    string name;
+    int age;
+    float high;
 };
 
-class n2 {
-  string name;
+class person_2
+{
+public:
+    
+    string name;
+    int age;
 };
 
-int main(){
- n1 myobj;
- return 0;
- }
- 
+
+
+int main()
+{
+    person obj_2;
+    person obj;
+    
+    cout<<"Enter the Name of the first person :";
+    cin>>obj.name;
+    
+    cout<<"Enter the age :";
+    cin>>obj.age;
+    
+    
+    cout<<"Enter the high:";
+    cin>>obj.high;
+    
+    cout << obj.name << " - " << obj.age << " - " << obj.high <<endl;
+    
+    cout<<"Enter the Name of the second person :";
+    cin>>obj_2.name;
+    
+    cout<<"Enter the age :";
+    cin>>obj_2.age;
+    
+    
+    cout<<"Enter the high:";
+    cin>>obj_2.high;
+    
+    cout << obj_2.name << " - " << obj_2.age << " - " << obj_2.high <<endl;
+    
+
+    
+    return 0;
+}
